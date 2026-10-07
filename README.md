@@ -1,2 +1,7 @@
-# iot-smart-environmental-monitoring
-Week 1 of an Embedded Systems Internship: requirements analysis, block diagram and architecture design for an ESP32-based IoT environmental monitoring and alert system (proposed design, documentation only).
+IoT-Based Smart Environmental Monitoring and Alert System: Week 1
+
+This repository contains the Week 1 deliverables of a four-week Embedded Systems Internship. The project is an ESP32-based environmental monitoring node that measures temperature, humidity and a gas-based air-quality indication, shows the results on a local OLED display, raises an alert through an LED and buzzer when configurable thresholds are exceeded, and sends data over Wi-Fi to a conceptual remote dashboard. If Wi-Fi is unavailable, the node keeps monitoring and alerting locally.
+
+Week 1 task: System Requirements Analysis and Block Diagram Design. The aim of this week is to plan the whole system before any firmware is written. The work covers the application and intended functionality, numbered functional and non-functional requirements, input and output specifications, communication interfaces (I2C, GPIO, ADC and Wi-Fi), power management, real-time design targets, hardware and software architecture, a detailed block diagram, a software flowchart, data flow, component selection and justification, fault handling, reliability and security considerations, and a requirement traceability matrix.
+
+Proposed hardware: ESP32 microcontroller, DHT22 temperature/humidity sensor, MQ-135 gas sensor (used as a prototype air-quality indicator, not a calibrated analyser), 0.96-inch I2C OLED display, LED and buzzer, and a 5 V USB supply regulated to 3.3 V.
